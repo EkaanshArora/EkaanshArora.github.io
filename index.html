@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Ekaansh Arora</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script src="https://use.fontawesome.com/82f5b8be2e.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#39B39D">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="loader-overlay">
+            <div class="loader"></div>
+        </div>
+        <div id="overlay" onclick="off()">
+            <div id="text">Scroll alongside the wall<div id="text2">Touch anywhere to continue.</div></div>
+            
+        </div>
+        <div class="bg-face"></div>
+        <div class="bg-wall">
+            <div class="bg-noise"></div>
+            <section class="page" id="one">
+                <div class="headingtext">
+                    Ekaansh Arora
+                </div>
+                <div class="headtext">
+                    developer, designer, musician
+                </div>
+                <img src="images/next.png" id="nextimg">
+            </section>
+            <section class="page" id="two">
+                <div class="aboutme">
+                    Hey, welcome to my home on the internet!
+                </div>
+                <div class="subaboutme">
+                    I love art, design, music and technology. I work as a graphic designer and a front-end developer. I design branding for businesses,
+                    web experiences and user interfaces.
+                </div>
+                <div class="subaboutme2">
+                    Check out my portfolio.
+                </div>
+            </section>
+            <section class="page" id="three">
+                <div class="folioimages">
+                    <img src="images/folio/dune.jpg" id="dune">
+                    <img src="images/folio/beebo.jpg" id="beebo">
+                    <img src="images/folio/matty.jpg" id="matty">
+                    <img src="images/folio/ieee.jpg" id="ieee">
+                    <img src="images/folio/enigma.jpg" id="enigma">
+                    <img src="images/folio/gdg.jpg" id="gdg">
+                    <img src="images/folio/lwl.png" id="lwl">
+                    <br>
+                    <img src="images/folio/fading.jpg" id="fading">
+                    <img src="images/folio/ffcs.jpg" id="ffcs">
+                    <img src="images/folio/quote.jpg" id="quote">
+                </div>
+            </section>
+            <section class="page" id="four">
+                <div class="socialhead">
+                    Let's get social?
+                </div>
+                <div class="socialicon">
+                    <a href="https://www.instagram.com/ekaansh.arora/">
+                        <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="socialicon">
+                    <a href="https://github.com/EkaanshArora/">
+                        <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="socialicon">
+                    <a href="https://open.spotify.com/user/ekaansh">
+                        <i class="fa fa-spotify fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="socialicon">
+                    <a href="https://500px.com/ekaansh">
+                        <i class="fa fa-500px fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="socialicon">
+                    <a href="https://www.facebook.com/ekaansh">
+                        <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="socialicon">
+                    <a href="https://steamcommunity.com/id/ekaansh">
+                        <i class="fa fa-steam fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("#loader-overlay").fadeOut("slow");
+            $(".bg-noise").outerWidth($(".bg-wall").outerWidth());
+            $("#wrapper").outerWidth($(".bg-wall").outerWidth() + $(".bg-face").outerWidth());
+            if($(window).width()<500)
+            {
+                on();
+            }
+        });
+        jQuery(function ($) {
+            var windowWidth = $(window).width();
+            var windowHeight = $(window).height();
+
+            $(window).resize(function () {
+                if (windowWidth != $(window).width() || windowHeight != $(window).height()) {
+                    location.reload();
+                    return;
+                }
+            });
+        });
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Bebas Neue'), url('../BebasNeue.woff') format('woff');
+}
+body{
+    overflow-y: hidden;
+    margin: 0;
+}
+li{
+	padding: 0 !important;
+}
+::-webkit-scrollbar { 
+	display:none; 
+}
+#wrapper {
+    height: 100vh;
+    width: 11000px;
+    display: flex;
+}
+.bg-face{
+    background-image: url(../../images/face.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: inline-block;
+    width: 47.46vh;
+}
+.bg-wall { 
+	background-image: url('../../images/wall.jpg');
+	height: 100%;
+    margin: 0 -1px;
+    display:inline-block;
+}
+@media only screen and (max-aspect-ratio:6777/1000) {
+    .bg-wall { 
+        background-size: cover;
+    }
+}
+@media only screen and (min-aspect-ratio:6777/1000) {
+    .bg-wall { 
+        background-size: contain;
+    }
+}
+.bg-noise{
+	background-image: url('../../images/texx.jpg');
+	opacity: 0.1;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    pointer-events: none;
+    z-index: 5;
+    width: 9000px
+}
+.page{
+	vertical-align: top;
+    display:inline-block;
+}
+#one{
+	text-align: center;
+}
+.headingtext{
+	color:#fff;
+    text-align: center;
+    margin-top: 150px;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 12vh;
+    margin-left:20px;
+	margin-top:50px;
+	opacity:0.9;
+	text-align: left;
+}
+.headtext{
+	font-size:6vh;
+	margin-left:30px;
+	font-family: 'Bebas Neue','Open Sans', sans-serif;
+	color:#fff;
+    letter-spacing: 0.83vh;
+	text-align: center;
+	opacity:0.8;
+	text-align: left;
+	font-weight: 700; 
+}
+#nextimg{
+	opacity: 0.6;
+	margin-top: 20vh;
+	display:inline-blockk;
+	width: 50vh;
+}
+#two{
+	margin: 7em 2em 0 6em;
+	width: 50vw;
+}
+.aboutme{
+	margin-top: 0.5em;
+	font-size: 4vh;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	text-align: center;
+}
+.subaboutme{
+	font-size: 2.75vh;
+	margin-top: 1em;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	text-align: center;
+}
+.subaboutme2{
+	font-size: 2.75vh;
+	margin-top: 4em;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	text-align: center;
+}
+#three{
+	margin-top: 2em;
+}
+.folioimages{
+	height: 80vh;
+	position: relative;
+	z-index: 10;
+}
+#beebo, #matty, #eotfw, #dune, #ieee, #gdg, #ieee, #ffcs, #enigma, #lwl, #fading, #quote{
+	height: 40vh;
+	padding: 10px;
+}   
+#four{
+	margin: 4em 2em;
+	width: 40vh;
+}
+.socialhead{
+	margin-top: 4vh;
+	font-size: 4vh;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.socialicon{
+	display: inline-block;
+	margin: 0 5vh;
+	border-bottom: none;
+}
+.fa-5x{
+    margin: 5vh 0;
+    color: white;
+    transition-duration: 0.5s;
+    font-size: 10vh;
+}
+.fa-5x:hover{
+    color: #eee;
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width:750px)
+{
+	#one{
+		width: 80vw;
+	}
+	.headingtext{
+		font-size: 10vh;
+		line-height: 10vh;
+		margin-bottom: 2vh
+	}
+	.headtext{
+		font-size: 5vh;
+		letter-spacing: 0.4vh;
+		margin-left:23px;
+	}
+	.aboutme{
+		font-size: 3vh;
+	}
+	.subaboutme, .subaboutme2{
+		font-size: 2.5vh;
+	}
+	#two{
+		margin: 5em 4em 0 6em;
+	}
+	#nextimg{
+		margin-top: 20vh;
+		width: 40vh;
+	}
+	#two{
+		margin: 5em 2em 0 6em;
+		width: 80vw;
+	}
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 99; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+#text2{
+    color: white;
+	font-size: 20px;
+	position: relative;
+}
+#loader-overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1); /* Black background with opacity */
+    z-index: 99; /* Specify a stack order in case you're using a different order for other elements */
+}
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #09e2c9; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	margin: -50px 0 0 -50px;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
