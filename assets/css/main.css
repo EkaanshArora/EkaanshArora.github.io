@@ -34,7 +34,7 @@ li{
 }
 @media only screen and (max-aspect-ratio:6777/1000) {
     .bg-wall { 
-        background-size: contain;
+        background-size: cover;
     }
 }
 @media only screen and (min-aspect-ratio:6777/1000) {
