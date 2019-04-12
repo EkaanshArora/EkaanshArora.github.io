@@ -30,14 +30,15 @@ li{
 	background-image: url('../../images/wall.jpg');
 	height: 100%;
     margin: 0 -1px;
-    display:inline-block;
+	display:inline-block;
+	background-size: cover;
 }
-@media only screen and (max-aspect-ratio:6777/1000) {
+/* @media only screen and (max-aspect-ratio:6777/1000) {
     .bg-wall { 
         background-size: cover;
     }
-}
-@media only screen and (min-aspect-ratio:6777/1000) {
+} */
+@media only screen and (min-aspect-ratio:1550/1000) {
     .bg-wall { 
         background-size: contain;
     }
