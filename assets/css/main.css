@@ -122,7 +122,7 @@ li{
 	position: relative;
 	z-index: 10;
 }
-#beebo, #matty, #eotfw, #dune, #ieee, #gdg, #ieee, #ffcs, #enigma, #lwl, #fading, #quote{
+.folioimage{
 	height: 40vh;
 	padding: 10px;
 }   
