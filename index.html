@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -33,8 +33,9 @@
             <div class="loader"></div>
         </div>
         <div id="overlay" onclick="off()">
-            <div id="text">Scroll alongside the wall<div id="text2">Touch anywhere to continue.</div></div>
-            
+            <div id="text">Scroll alongside the wall<div id="text2">Touch anywhere to continue.</div>
+            </div>
+
         </div>
         <div class="bg-face"></div>
         <div class="bg-wall">
@@ -69,6 +70,7 @@
                     <img src="images/folio/tv.jpg" class="folioimage" title="Toon 3D TV render">
                     <img src="images/folio/matty.jpg" class="folioimage" title="Matty Healy illustration">
                     <img src="images/folio/sc.gif" class="folioimage" title="3D sculpt">
+                    <img src="images/folio/fan.gif" class="folioimage" title="eevee fan render">
                     <img src="images/folio/ieee.jpg" class="folioimage" title="Poster for IEEE VIT">
                     <img src="images/folio/enigma.jpg" class="folioimage" title="Poster for IEEE VIT">
                     <img src="images/folio/devd.jpg" class="folioimage" title="Dev D illustration">
@@ -83,12 +85,11 @@
                     <img src="images/folio/d+.jpg" class="folioimage" title="Poster for IEEE VIT">
                     <img src="images/folio/gdg.jpg" class="folioimage" title="Poster for DSC VIT">
                     <img src="images/folio/mini.jpg" class="folioimage" title="illustration">
-                    <!-- <img src="images/folio/quote.jpg" class="folioimage"> -->
-                    <!-- <img src="images/folio/matty.jpg" class="folioimage"> -->
                     <a href="https://instagram.com/poorldrawnbollywood" title="poorldrawnbollywood">
                         <img src="images/folio/rang.jpg" class="folioimage">
                     </a>
-                    </div>
+                    <img src="images/folio/cig.jpg" class="folioimage" title="illustration">
+                </div>
             </section>
             <section class="page" id="four">
                 <div class="socialhead">
@@ -135,8 +136,7 @@
             $("#loader-overlay").fadeOut("slow");
             $(".bg-noise").outerWidth($(".bg-wall").outerWidth());
             $("#wrapper").outerWidth($(".bg-wall").outerWidth() + $(".bg-face").outerWidth());
-            if($(window).width()<500)
-            {
+            if ($(window).width() < 500) {
                 on();
             }
         });
