@@ -31,7 +31,7 @@ li{
 	height: 100%;
     margin: 0 -1px;
 	display:inline-block;
-	background-size: cover;
+	background-size: contain;
 }
 /* @media only screen and (max-aspect-ratio:6777/1000) {
     .bg-wall { 
